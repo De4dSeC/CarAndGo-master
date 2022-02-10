@@ -1,0 +1,8 @@
+﻿@model CarsListViewModel
+
+<div class="row marginTop">
+    @foreach (var Car in Model.Cars)
+    {
+        @Html.Partial("CarsSummary", Car)
+    }
+</div>
